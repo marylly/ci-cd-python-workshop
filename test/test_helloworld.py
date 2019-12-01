@@ -17,3 +17,8 @@ class HelloWorldTest(helper.CPWebCase):
         """Hello world endpoint test"""
         self.getPage("/helloworld")
         self.assertBody('Hello World!')
+
+    def test_byebyeworld(self):
+        """Bye bye world endpoint test"""
+        self.getPage("/byebyeworld")
+        self.assertBody('Bye bye World!')
