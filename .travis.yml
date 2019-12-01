@@ -18,4 +18,3 @@ jobs:
   - stage: coverage
     name: "Coverage"
     script: pytest --cov=app/ test/
-    script: pytest --cov=app/ test/ --cov-report html:cov_html
