@@ -1,1 +1,1 @@
-web: python app/helloword.py
+web: python app/helloworld.py
