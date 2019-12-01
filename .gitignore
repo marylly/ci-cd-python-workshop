@@ -1,0 +1,9 @@
+.pytest_cache
+dist/
+app/__pycache__
+bin/
+lib/
+lib64
+share/
+include/
+test/__pycache__

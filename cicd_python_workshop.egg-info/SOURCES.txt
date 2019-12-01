@@ -1,0 +1,8 @@
+setup.py
+app/__init__.py
+app/helloworld.py
+cicd_python_workshop.egg-info/PKG-INFO
+cicd_python_workshop.egg-info/SOURCES.txt
+cicd_python_workshop.egg-info/dependency_links.txt
+cicd_python_workshop.egg-info/top_level.txt
+test/test_helloworld.py
