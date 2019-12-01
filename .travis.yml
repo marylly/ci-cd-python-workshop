@@ -7,9 +7,7 @@ install:
   - python setup.py -q install
 stages:
   - name: linter
-    script:
     - pylint setup.py app/ test/ -d R0201
 
   - name: test
-    script:
     - pytest
