@@ -5,6 +5,11 @@ install:
   - pip install setuptools -U
   - pip install -r requirements.txt
   - python setup.py -q install
-script:
-  - pylint setup.py app/ test/ -d R0201
-  - pytest
+stages:
+  - name: linter
+    script:
+    - pylint setup.py app/ test/ -d R0201
+
+  - name: test
+    script:
+    - pytest
