@@ -22,3 +22,6 @@ class HelloWorldTest(helper.CPWebCase):
         """Bye bye world endpoint test"""
         self.getPage("/byebyeworld")
         self.assertBody('Bye bye World!')
+
+if __name__ == '__main__':
+    helper.main()
