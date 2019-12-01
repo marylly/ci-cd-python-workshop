@@ -22,4 +22,3 @@ class HelloWorldTest(helper.CPWebCase):
         """Bye bye world endpoint test"""
         self.getPage("/byebyeworld")
         self.assertBody('Bye bye World!')
-
