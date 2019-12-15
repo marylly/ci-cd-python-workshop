@@ -16,6 +16,6 @@ class Helloworld():
 
 if __name__ == '__main__':
     cherrypy.config.update({'server.socket_host': '0.0.0.0',
-                            'server.socket_port': os.environ["PORT"]
+                            'server.socket_port': int(os.environ["PORT"])
                            })
     cherrypy.quickstart(Helloworld())
