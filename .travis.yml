@@ -18,3 +18,8 @@ jobs:
   - stage: coverage
     name: "Coverage"
     script: pytest --cov=app/ test/
+
+  - stage: deploy
+    name: Deploy in Heroku
+    script:
+      - gem install dpl
