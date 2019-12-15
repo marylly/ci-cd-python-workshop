@@ -1,5 +1,6 @@
 """Hello World test application module"""
 import cherrypy
+import os
 
 class Helloworld():
     """Hello World class signature"""
@@ -14,4 +15,8 @@ class Helloworld():
         return "Bye bye World!"
 
 if __name__ == '__main__':
+    cherrypy.config.update({
+        'server.socket_host': '0.0.0.0',
+	    'server.socket_port': os.environ["PORT"]
+        })
     cherrypy.quickstart(Helloworld())
