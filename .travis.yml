@@ -19,7 +19,7 @@ jobs:
     name: "Coverage"
     script: pytest --cov=app/ test/
 
-  - stage: deploy
-    name: Deploy in Heroku
-    script:
-      - gem install dpl
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API
+  app: ci-cd-python-workshop
